@@ -25,11 +25,14 @@ def megszamol(listam):
 print(f"{megszamol(lista)} volt 50-nél nagyobb")
 
 # eldöntés
-volt = False
-for elem in lista:
-    if elem > 90:
-        volt = True
-if volt:
+def eldont(lista):
+    volt = False
+    for elem in lista:
+        if elem > 90:
+            volt = True
+    return volt
+
+if eldont(lista):
     print("Volt")
 else:
     print("Nem volt 90-nél nagyobb")
@@ -61,7 +64,32 @@ else:
     print("Nem volt 90-nél nagyobb")
 
 
+# összegzés
 
+
+def osszegzes(l):
+    osszeg = 0
+    for elem in l:
+        osszeg += elem
+    return osszeg
+
+print(osszegzes(lista))
+print(osszegzes([1,2,3,4,4]))
+print(osszegzes({1,2,3,4,4}))
+print(osszegzes((1,2,3,4,4)))
+
+print(sum(lista))
+
+# átlag  pl: sum(lista)/len(lista)
+def atlag(l):
+    db = 0
+    osszeg = 0
+    for elem in l:
+        osszeg += elem
+        db += 1
+    return osszeg / db
+print(atlag([2,4]))
+print(atlag(lista))
 
 
 
