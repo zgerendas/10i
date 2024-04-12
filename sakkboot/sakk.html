@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakk</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>  
+    <style>
+        .fekete{
+            background-color: black;
+        }
+        .feher{
+            background-color: white;
+            height: 80px;
+        }
+        .keret{
+            background-color: bisque;
+            text-align: center;
+            padding: 30px;
+        }
+        .fejen{
+            rotate: 180deg;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1 feher">&nbsp;</div>
+            <div class="col-lg-1 keret">&nbsp;</div>
+            <div class="col-lg-1 keret fejen">A</div>
+            <div class="col-lg-1 keret fejen">B</div>
+            <div class="col-lg-1 keret fejen">C</div>
+            <div class="col-lg-1 keret fejen">D</div>
+            <div class="col-lg-1 keret fejen">E</div>
+            <div class="col-lg-1 keret fejen">F</div>
+            <div class="col-lg-1 keret fejen">G</div>
+            <div class="col-lg-1 keret fejen">H</div>
+            <div class="col-lg-1 keret">&nbsp;</div>
+            <div class="col-lg-1 feher">&nbsp;</div>
+        </div> 
+        <div class="row">
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret">8</div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 keret fejen">8</div>
+            <div class="col-lg-1 feher"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret">7</div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret fejen">7</div>
+            <div class="col-lg-1 feher"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret">6</div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 keret fejen">6</div>
+            <div class="col-lg-1 feher"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1 feher"></div>
+
+            <div class="col-lg-1 keret">5</div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret fejen">5</div>
+            <div class="col-lg-1 feher"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret">4</div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 keret fejen">4</div>
+            <div class="col-lg-1 feher"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret">3</div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret fejen">3</div>
+            <div class="col-lg-1 feher"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret">2</div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 keret fejen">2</div>
+            <div class="col-lg-1 feher"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret">1</div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 fekete"></div>
+            <div class="col-lg-1 feher"></div>
+            <div class="col-lg-1 keret fejen ">1</div>
+            <div class="col-lg-1 feher"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-1 feher">&nbsp;</div>
+            <div class="col-lg-1 keret">&nbsp;</div>
+            <div class="col-lg-1 keret">A</div>
+            <div class="col-lg-1 keret">B</div>
+            <div class="col-lg-1 keret">C</div>
+            <div class="col-lg-1 keret">D</div>
+            <div class="col-lg-1 keret">E</div>
+            <div class="col-lg-1 keret">F</div>
+            <div class="col-lg-1 keret">G</div>
+            <div class="col-lg-1 keret">H</div>
+            <div class="col-lg-1 keret">&nbsp;</div>
+            <div class="col-lg-1 feher">&nbsp;</div>
+        </div> 
+
+    </div>
+</body>
+</html>
